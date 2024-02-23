@@ -10,3 +10,7 @@ Simulation (done with [GTKWave](https://gtkwave.sourceforge.net/)):
 ![waveform](docs/waveform.png)
 
 > Note: Check the [example_program.md](docs/example_program.md) to learn how to program this computer
+
+References: 
+- [Ben Eater's 8-bit computer series](https://www.youtube.com/playlist?list=PLowKtXNTBypGqImE405J2565dvjafglHU)
+- [Digital Computer Electronics](https://www.amazon.com/Digital-Computer-Electronics-Jerald-Malvino-dp-0074622358/dp/0074622358/ref=dp_ob_title_bk)
