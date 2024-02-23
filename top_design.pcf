@@ -1,0 +1,6 @@
+set_io              CLK     21
+
+set_io              out1[0]    99
+set_io              out1[1]    98
+set_io              out1[2]    97
+set_io              out1[3]    96
