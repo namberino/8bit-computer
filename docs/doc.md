@@ -120,4 +120,4 @@ For the **HLT** instruction, since it doesn't use any operand, we can just put 0
 
 The `program.bin` file must have 16 bytes so if your program doesn't utilize all 16 bytes then fill out the rest of the file with 0s.
 
-And example program can be found in [example_program_annotated.md](example_program_annotated.md) and [program.bin](../program.bin)
+And example program can be found in [example_program.md](example_program.md) and [program.bin](../program.bin)
