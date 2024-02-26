@@ -108,46 +108,46 @@ module controller(
                             end
                     endcase
 				end
-                4: 
-                    begin
-                        case (opcode)
-                            OP_LDA: 
-                                begin
-                                    ctrl_word[MEM_EN] = 1;
-                                    ctrl_word[A_LOAD] = 1;
-                                end
+            4: 
+                begin
+                    case (opcode)
+                        OP_LDA: 
+                            begin
+                                ctrl_word[MEM_EN] = 1;
+                                ctrl_word[A_LOAD] = 1;
+                            end
 
-                            OP_ADD: 
-                                begin
-                                    ctrl_word[MEM_EN] = 1;
-                                    ctrl_word[B_LOAD] = 1;
-                                end
+                        OP_ADD: 
+                            begin
+                                ctrl_word[MEM_EN] = 1;
+                                ctrl_word[B_LOAD] = 1;
+                            end
 
-                            OP_SUB: 
-                                begin
-                                    ctrl_word[MEM_EN] = 1;
-                                    ctrl_word[B_LOAD] = 1;
-                                end
-                        endcase
-                    end
+                        OP_SUB: 
+                            begin
+                                ctrl_word[MEM_EN] = 1;
+                                ctrl_word[B_LOAD] = 1;
+                            end
+                    endcase
+                end
 
-                5: 
-                    begin
-                        case (opcode)
-                            OP_ADD: 
-                                begin
-                                    ctrl_word[ADDER_EN] = 1;
-                                    ctrl_word[A_LOAD] = 1;
-                                end
+            5: 
+                begin
+                    case (opcode)
+                        OP_ADD: 
+                            begin
+                                ctrl_word[ADDER_EN] = 1;
+                                ctrl_word[A_LOAD] = 1;
+                            end
 
-                            OP_SUB:
-                                begin
-                                    ctrl_word[ADDER_SUB] = 1;
-                                    ctrl_word[ADDER_EN] = 1;
-                                    ctrl_word[A_LOAD] = 1;
-                                end
-                        endcase
-                    end
+                        OP_SUB:
+                            begin
+                                ctrl_word[ADDER_SUB] = 1;
+                                ctrl_word[ADDER_EN] = 1;
+                                ctrl_word[A_LOAD] = 1;
+                            end
+                    endcase
+                end
         endcase
 	end
 
