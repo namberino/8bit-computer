@@ -26,7 +26,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     
-      steps:
+    steps:
       - name: Run test file
         run: |
           chmod +x test.sh
