@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3 # checkout sources
+      - uses: actions/checkout@v3 # checkout source
 
       - name: Setup Python
         uses: actions/setup-python@v4
@@ -28,6 +28,8 @@ jobs:
     needs: setup
     
     steps:
+      - uses: actions/checkout@v3 # checkout source
+      
       - name: Run test file
         run: |
           chmod +x test.sh
