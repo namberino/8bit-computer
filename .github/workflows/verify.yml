@@ -23,11 +23,7 @@ jobs:
       - name: Install Apio packages
         run: apio install -a
 
-      - name: Verify Apio code
-        run: apio verify
-
-      - name: Simulate Apio code
-        run: apio sim
-
-      - name: Check dumpfile
-        run: if [ -f "top_design_tb.vcd" ]; then exit 0; else exit 1; fi
+      - name: Run test file
+        run: |
+          chmod +x test.sh
+          ./test.sh
