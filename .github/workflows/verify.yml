@@ -5,7 +5,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  setup:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,6 +23,10 @@ jobs:
       - name: Install Apio packages
         run: apio install -a
 
+  test:
+    runs-on: ubuntu-latest
+    
+      steps:
       - name: Run test file
         run: |
           chmod +x test.sh
