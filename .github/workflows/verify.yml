@@ -22,13 +22,6 @@ jobs:
 
       - name: Install Apio packages
         run: apio install -a
-
-  test:
-    runs-on: ubuntu-latest
-    needs: setup
-    
-    steps:
-      - uses: actions/checkout@v3 # checkout source
       
       - name: Run test file
         run: |
