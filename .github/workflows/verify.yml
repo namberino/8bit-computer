@@ -2,7 +2,10 @@ name: Verify
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
+      - 8bit
+      - 16bit
 
 jobs:
   build:
