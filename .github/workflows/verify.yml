@@ -24,3 +24,6 @@ jobs:
 
       - name: Verify Apio code
         run: apio verify
+
+      - name: Simulate Apio code
+        run: apio sim
