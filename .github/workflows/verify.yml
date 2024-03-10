@@ -25,6 +25,7 @@ jobs:
 
   test:
     runs-on: ubuntu-latest
+    needs: setup
     
     steps:
       - name: Run test file
