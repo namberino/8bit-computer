@@ -1,4 +1,4 @@
-# An computer implemented in FPGA
+# VSAP-1: A processor based on the SAP-1 made in FPGA
 
 This is a computer implemented using Verilog
 
